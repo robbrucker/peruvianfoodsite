@@ -1,0 +1,427 @@
+/* Global Styles */
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.h-huge{
+  font-size: 76px;
+  font-family: 'Loved by the King', cursive;
+}
+.vert-text {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.vert-text h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 4.5em;
+  font-weight: 700;
+  font-family: 'Share Tech Mono', sans-serif;
+
+}
+.head_text {
+  font-family: 'Share Tech Mono', sans-serif;
+  font-size:30px;
+  background-color: rgba(192, 194, 190, 0.24);
+}
+h3, h2, h4, h1 {
+  font-family: 'Loved by the King', cursive;
+}
+.btn, p {
+  font-family: 'Share Tech Mono', sans-serif;
+}
+ol
+{
+  list-style-type:none;
+}
+ul
+{
+  list-style-type:none;
+}
+
+.i-f-a
+{
+  padding: 1em 1em 1em 1em;
+  font-size:40px;
+}
+a
+{
+  font-family: 'Loved by the King', cursive;
+}
+.space-right
+{
+  text-align: left;
+  font-family: 'Share Tech Mono', sans-serif;
+}
+.redonc
+{
+  font-size:70px;
+  font-family: 'Loved by the King', cursive;
+}
+.redonc-two
+{
+  font-size:70px;
+  font-family: 'Share Tech Mono', sans-serif;
+}
+/* Side Menu */
+
+#sidebar-wrapper {
+  margin-right: -250px;
+  right: 0;
+  width: 250px;
+  background: #000;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+  z-index: 1000;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-nav li {
+  line-height: 40px;
+  text-indent: 20px;
+}
+
+.sidebar-nav li a {
+  color: #999999;
+  display: block;
+  text-decoration: none;
+}
+
+.sidebar-nav li a:hover {
+  color: #fff;
+  background: rgba(255,255,255,0.2);
+  text-decoration: none;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+  text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+  height: 55px;
+  line-height: 55px;
+  font-size: 18px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+  color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+  color: #fff;
+  background: none;
+}
+
+#menu-toggle {
+  top: 0;
+  right: 0;
+  position: fixed;
+  z-index: 1;
+}
+
+.talking-points {
+  background-color: rgba(255, 255, 255, 0.77);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size:36px;
+}
+
+#sidebar-wrapper.active {
+  right: 250px;
+  width: 250px;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+.toggle {
+  margin: 5px 5px 0 0;
+}
+
+/* Full Page Image Header Area */
+
+.header {
+  display: table;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: url(../assets/img/lomo_saltado.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  transition: background 0.5s linear;
+  -moz-transition: background 0.5s linear; /* Firefox 4 */
+  -webkit-transition: background 0.5s linear; /* Safari and Chrome */
+  -o-transition: background 0.5s linear; /* Opera */
+}
+
+.section-two {
+  display: table;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: url(../assets/img/aji_de_gallina.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  transition: background 0.5s linear;
+  -moz-transition: background 0.5s linear; /* Firefox 4 */
+  -webkit-transition: background 0.5s linear; /* Safari and Chrome */
+  -o-transition: background 0.5s linear; /* Opera */
+}
+.section-three {
+  display: table;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: url(../assets/img/papa.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  transition: background 0.5s linear;
+  -moz-transition: background 0.5s linear; /* Firefox 4 */
+  -webkit-transition: background 0.5s linear; /* Safari and Chrome */
+  -o-transition: background 0.5s linear; /* Opera */
+}
+
+/* Intro */
+
+.welcome-button, .quipo-welcome {
+  font-size: 538%;
+}
+
+/*@media (max-width: 300px) {*/
+/*.welcome-button, .quipo-welcome {*/
+/*font-size: 24px;*/
+/*}*/
+/*.intro {*/
+/*padding: 50px 0;*/
+/*font-size: 36px;*/
+/*}*/
+/*h1 {*/
+/*font-size:26px;*/
+/*}*/
+/*}*/
+.intro {
+  padding: 50px 0;
+  font-size:70px;
+}
+
+@media (max-width: 700px) {
+  .welcome-button, .quipo-welcome {
+    font-size: 40px;
+  }
+  .intro {
+    padding: 36px 0;
+    font-size: 49px;
+  }
+  h1 {
+    font-size:44px;
+  }
+}
+
+
+
+.about-me-blurb {
+  font-family: 'Share Tech Mono', sans-serif;
+  font-size:18px;
+}
+
+/* Services */
+
+.services {
+  background: rgba(0, 78, 119, 0.84);
+  padding: 50px 0;
+  color: #ffffff;
+}
+
+.service-item {
+  margin-bottom: 15px;
+}
+
+i.service-icon {
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 56px;
+  width: 140px;
+  height: 140px;
+  line-height: 136px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* Callout */
+
+.callout {
+  color: #ffffff;
+  display: table;
+  height: 400px;
+  width: 100%;
+  background: url(../img/callout.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Portfolio */
+
+.portfolio {
+  padding: 50px 0;
+}
+
+.portfolio-item {
+  margin-bottom: 25px;
+}
+
+.img-portfolio {
+  margin: 0 auto;
+}
+
+/* Call to Action */
+
+.call-to-action {
+  color: #ffffff;
+  display: table;
+  height: 400px;
+  width: 100%;
+  background: url(../img/sh-1.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.call-to-action .btn {
+  margin: 10px;
+}
+
+/* Map */
+
+.map {
+  height: 500px;
+}
+
+/* Footer */
+
+footer {
+  padding: 100px 0;
+}
+
+.top-scroll {
+  margin-top: 50px;
+}
+
+.top-scroll a {
+  text-decoration: none;
+  color: inherit;
+}
+
+i.scroll {
+  color: #333333;
+}
+
+i.scroll:hover {
+  color: #0a5175;
+}
+/* Responsive */
+
+@media (max-width: 768px) {
+
+
+  .callout {
+    background: url(../img/callout.jpg) no-repeat center center scroll;
+  }
+
+  .map {
+    height: 75%;
+  }
+
+}
+
+
+.vert-text h1, h3 {
+  background-color: rgba(255, 255, 255, 0.88);
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+h3 {
+  font-size:36px;
+}
+
+.skills {
+  font-size:36px;
+}
+
+ol.timeline {
+  font-family: 'Share Tech Mono', sans-serif;
+  text-align: left;
+  font-size: 23px;
+  line-height:2
+}
+
+.year {
+  font-family: 'Loved by the King', cursive;
+}
+.code-facade {
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #c7254e;
+  background-color: #f9f2f4;
+  border-radius: 4px;
+  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+  font-size:14px;
+  line-height:2
+}
+
+.contact-blurb {
+  font-family: 'Share Tech Mono', sans-serif;
+  font-size:36px;
+}
+hr {
+  border-top: 15px solid rgba(0, 0, 0, 0.61) !important;
+}
+
+.menu-description {
+  font-family: 'Share Tech Mono', sans-serif;
+  background-color: #fff;
+}
+
+.order-section {
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.88);
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+.order-button {
+  height: 120px;
+  width: 100%;
+  font-size:32px;
+}

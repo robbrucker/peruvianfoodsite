@@ -1,2 +1,2 @@
-# peruvianfoodinrva.com.github.io
-This is the site for peruvianfoodinrva.com
+Site for peruvianfoodinrva.com. 
+Site uses [ngbp](https://github.com/ngbp/ngbp)
