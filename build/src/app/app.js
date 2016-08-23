@@ -35,6 +35,10 @@ angular.module( 'ngBoilerplate', [
     $location.hash(id);
     $anchorScroll();
   };
+
+  $scope.thankUser = function() {
+    alert("Thank you for ordering. If you have any questions, please contact us at peruvianfoodinrva@gmail.com");
+  };
 })
 
 ;

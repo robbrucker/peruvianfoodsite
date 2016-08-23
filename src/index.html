@@ -29,7 +29,7 @@
   <a id="menu-toggle" ng-click="toggleMenu()" href="#" class="btn btn-primary btn-lg toggle"><i class="fa fa-bars"></i></a>
   <div id="sidebar-wrapper" class="side-bar">
   <ul class="sidebar-nav">
-  <a id="menu-close" ng-click="toggleMenu()" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+  <a id="menu-close" ng-click="toggleMenu()" href="" class="btn btn-default btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
   <li class="sidebar-brand"></li>
   <li><a href="" ng-click="scrollTo('top')">Home</a></li>
   <li><a href="" ng-click="scrollTo('about')">Services</a></li>
@@ -42,7 +42,7 @@
     <div class="vert-text">
       <h1><span class="h-huge quipo-welcome">QUIPU</span></h1>
       <h1> <span class="intro"> PERUVIAN AND INTERNATIONAL CUISINE CATERING SERVICE IN RVA</span></h1>
-      <p class="talking-points">Aji de gallina, lomo saltado, anticuchos, chifa, arroz con pollo, papa rellena, papa a la huancaina, rocoto relleno and much more.  </p>
+      <p class="talking-points">Aji de Gallina, Lomo Saltado, Anticuchos, Chifa, Arroz con Pollo, Papa Rellena, Papa a la Huancaina, Rocoto Relleno and much more.  </p>
       <a href="" ng-click="scrollTo('about')" class="btn welcome-button btn-primary">Get started</a>
       <!--<h3>Or..</h3>-->
     </div>
@@ -60,28 +60,30 @@
             <br /><br />We offer catering for a variety of events, specializing in corporate meetings, with a minimum order of 7 meals.
             <br /><br />We also have weekly lunch specials that are held once a week. We display an appetizer and entree, as well as the day of the week the meal is being served. Pricing is heavily discounted on these meals. You can order directly from our website and the meals will be delivered during lunch time.
             </p>
-            <!--<p class="order-section">-->
+            <p class="order-section">
 
 
-              <!--<br /><br />This weeks special is Causa Limeña with Tuna for <u>Wednesday August 24th 2016</u>. The price is $7.99 per order. To order, please fill out the information below:<br /><br />-->
-            <!--<form method="post" target="dummyframe" action="http://rva-dev.com/contact_rob.php">-->
+              <br /><br />This weeks special is Causa Limeña with Tuna for <u>Wednesday August 24th 2016</u>. The price is $7.99 per order. To order, please fill out the information below:<br /><br />
+            <form method="post" target="dummyframe" action="http://rva-dev.com/contact_rob.php">
 
-              <!--<span class="col-md-6">-->
-              <!--Name: <br /><input type="text" ng-model="order.order_name" class="form-group" placeholder="name" /><br /><br />-->
-              <!--Number of orders: <br /><input type="text" ng-model="order.order_quantity" class="form-group" placeholder="Quanity" /><br /><br />-->
-              <!--</span>-->
-              <!--<span class="col-md-6">-->
-              <!--Email: <br /><input type="text" ng-model="order.order_email" class="form-group" placeholder="email" /><br /><br />-->
-              <!--Location: <br /><input type="text" ng-model="order.order_location" class="form-group" placeholder="location" /><br /><br />-->
-              <!--</span>-->
-              <!--<input type="submit" class="btn btn-primary order-button" value="Order" />-->
-              <!--</form>-->
-            <!--</p>-->
+              <span class="col-md-6">
+              Name: <br /><input type="text" ng-model="order.order_name" id="order_name" name="order_name" class="form-group" placeholder="name" /><br /><br />
+              Number of orders: <br /><input type="text" ng-model="order.order_quantity" id="order_quantity" name="order_quantity" class="form-group" placeholder="Quanity" /><br /><br />
+              </span>
+              <span class="col-md-6">
+              Email: <br /><input type="text" ng-model="order.order_email" id="order_email" name="order_email" class="form-group" placeholder="email" /><br /><br />
+              Location: <br /><input type="text" ng-model="order.order_location" id="order_location" name="order_location" class="form-group" placeholder="location" /><br /><br />
+              </span>
+              <input type="submit" class="btn btn-primary order-button" onclick="thankUser()" value="Order" />
+              </form>
+            </p>
             </h1>
         </div>
       </div>
     </div>
   </div>
+  <iframe width="0" height="0" border="0" name="dummyframe" id="dummyframe"></iframe>
+
 
   <!-- Intro -->
   <div id="foods" class="section-three">
@@ -125,7 +127,7 @@
   </div>
   <script type="text/javascript">
     function thankUser() {
-      window.alert("Thank you! We will keep you updated");
+      window.alert("Thank you! Your order has been submitted. Please email us at peruvianfoodinrva@gmail.com with any questions or comments.");
     }
   </script>
 

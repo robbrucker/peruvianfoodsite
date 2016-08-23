@@ -64,7 +64,7 @@ app.factory('menuService', function() {
                 {
                     foodType: "Peruvian",
                     name: "Pollo Saltado ",
-                    description: "Strip of chicken sautéed w/ onions, tomatoes, peppers, spices mixed w/ fries, served w/ rice.",
+                    description: "Strips of chicken sauteed w/ onions, tomatoes, peppers, spices mixed w/ fries, served w/ rice.",
                     price: "14.99",
                     dishType: "Entrees"
                 },
@@ -183,7 +183,7 @@ app.factory('menuService', function() {
                 {
                     foodType: "Peruvian",
                     name: "Sudado de pescado",
-                    description: "This classic Peruvian fish stew with an assortment of spices and unique preparation to make your test buds pass out",
+                    description: "Peruvian fish stew with an assortment of spices and unique preparation.",
                     price: "15.99",
                     dishType: "Seafood Entrees"
                 }
