@@ -19,6 +19,7 @@
     <script type="text/javascript" src="vendor/angular/angular.js"></script>
     <script type="text/javascript" src="vendor/placeholders/angular-placeholders-0.0.1-SNAPSHOT.min.js"></script>
     <script type="text/javascript" src="vendor/angular-ui-router/release/angular-ui-router.js"></script>
+    <script type="text/javascript" src="vendor/lodash/lodash.min.js"></script>
     <script type="text/javascript" src="src/app/app.js"></script>
     <script type="text/javascript" src="src/app/globals.js"></script>
     <script type="text/javascript" src="src/app/home/home.js"></script>
@@ -77,14 +78,14 @@
             <form method="post" target="dummyframe" action="http://rva-dev.com/contact_rob.php">
 
               <span class="col-md-6">
-              Name: <br /><input type="text" ng-model="order.order_name" id="order_name" name="order_name" class="form-group" placeholder="name" /><br /><br />
-              Number of orders: <br /><input type="text" ng-model="order.order_quantity" id="order_quantity" name="order_quantity" class="form-group" placeholder="Quanity" /><br /><br />
+              Name: <br /><input type="text" ng-model="order.orderName" id="order_name" name="order_name" class="form-group" placeholder="name" /><br /><br />
+              Number of orders: <br /><input type="text" ng-model="order.orderQuantity" id="order_quantity" name="order_quantity" class="form-group" placeholder="Quanity" /><br /><br />
               </span>
               <span class="col-md-6">
-              Email: <br /><input type="text" ng-model="order.order_email" id="order_email" name="order_email" class="form-group" placeholder="email" /><br /><br />
-              Location: <br /><input type="text" ng-model="order.order_location" id="order_location" name="order_location" class="form-group" placeholder="location" /><br /><br />
+              Email: <br /><input type="text" ng-model="order.orderEmail" id="order_email" name="order_email" class="form-group" placeholder="email" /><br /><br />
+              Location: <br /><input type="text" ng-model="order.orderLocation" id="order_location" name="order_location" class="form-group" placeholder="location" /><br /><br />
               </span>
-              <input type="submit" class="btn btn-primary order-button" onclick="thankUser()" value="Order" />
+              <input type="submit" class="btn btn-primary order-button" ng-click="thankUser()" value="Order" />
               </form>
             </p>
             </h1>
@@ -102,6 +103,16 @@
         <div class="col-md-12 text-center">
           <h1><span class="h-huge quipo-welcome">Menu</span></span></h1>
             <p>
+            <div class="filter-menu col-lg-4">
+                <label>Vegetarian Only</label>
+                <input type="checkbox" ng-model="vegetarianFilter" ng-click="filterMenu(vegetarianFilter, 'vegetarian')" />
+            </div>
+          <div class="col-lg-4">
+            <input type="text" ng-model="searchText" class="form-group search-text-box" placeholder="Search Menu" />
+          </div>
+
+
+            <br /><br />
               <h1 class="h-huge quipo-welcome talking-points">Appetizers</h1>
               <div ng-repeat="obj in appetizers track by $index" class="talking-points">
                 <h1>{{obj.name}}</h1>
@@ -135,11 +146,7 @@
   <!-- /Intro -->
 
   </div>
-  <script type="text/javascript">
-    function thankUser() {
-      window.alert("Thank you! Your order has been submitted. Please email us at peruvianfoodinrva@gmail.com with any questions or comments.");
-    }
-  </script>
+
 
 
   <!--<script>-->

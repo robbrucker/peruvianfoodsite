@@ -6249,3 +6249,13 @@ hr {
 span.col-md-6 {
   background-color: rgba(255, 255, 255, 0.88);
 }
+.filter-menu {
+  background-color: rgba(255, 255, 255, 0.88);
+  font-family: 'Share Tech Mono', sans-serif;
+  font-size: 24px;
+}
+.search-text-box {
+  font-family: 'Share Tech Mono', sans-serif;
+  height: 38px;
+  width: 100%;
+}
