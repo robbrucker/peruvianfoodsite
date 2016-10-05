@@ -41,6 +41,7 @@
   <div id="top" class="header">
     <div class="vert-text">
       <h1><span class="h-huge quipo-welcome">QUIPU</span></h1>
+      <h1>804.608.9257</h1>
       <h1> <span class="intro"> PERUVIAN AND INTERNATIONAL CUISINE CATERING SERVICE IN RVA</span></h1>
       <p class="talking-points">Aji de Gallina, Lomo Saltado, Anticuchos, Chifa, Arroz con Pollo, Papa Rellena, Papa a la Huancaina, Rocoto Relleno and much more.  </p>
       <a href="" ng-click="scrollTo('about')" class="btn welcome-button btn-primary">Get started</a>
@@ -63,7 +64,7 @@
             <p class="order-section">
 
 
-              <br /><br />This weeks special is Causa Limeña with Tuna for <u>Wednesday August 24th 2016</u>. The price is $7.99 per order. To order, please fill out the information below:<br /><br />
+             <!-- <br /><br />This weeks special is Causa Limeña with Tuna for <u>Wednesday August 24th 2016</u>. The price is $7.99 per order. To order, please fill out the information below:<br /><br />
             <form method="post" target="dummyframe" action="http://rva-dev.com/contact_rob.php">
 
               <span class="col-md-6">
@@ -76,7 +77,7 @@
               </span>
               <input type="submit" class="btn btn-primary order-button" ng-click="thankUser()" value="Order" />
               </form>
-            </p>
+            </p> -->
             </h1>
         </div>
       </div>
@@ -105,6 +106,8 @@
               <h1 class="h-huge quipo-welcome talking-points">Appetizers</h1>
               <div ng-repeat="obj in appetizers track by $index" class="talking-points">
                 <h1>{{obj.name}}</h1>
+                <h1>{{obj.english_name}}</h1>
+                <center ng-if="obj.image"><img src="{{obj.image}}" style="width:500px;" /><span><a ng-if="obj.image_by" href="{{obj.image_by}}" target="_blank">Image by {{obj.image_by_name}}</a></span></center>
                 <h2 class="menu-description">{{obj.description}} {{obj.price}}</h2>
                 <h3 ng-if="obj.isVegetarian === true">Vegetarian</h3>
                 <hr />
@@ -114,6 +117,10 @@
           <h1 class="h-huge quipo-welcome talking-points">Entrees</h1>
           <div ng-repeat="obj in entrees track by $index" class="talking-points">
             <h1>{{obj.name}}</h1>
+            <h1>{{obj.english_name}}</h1>
+            <center><img src="{{obj.image}}" style="width:500px;" /></center>
+            <center ng-if="obj.image"><span><a href="{{obj.image_by}}" ng-if="obj.image_by" target="_blank">Image by {{obj.image_by_name}}</a></span></center>
+
             <h2 class="menu-description">{{obj.description}} {{obj.price}}</h2>
             <h3 ng-if="obj.isVegetarian === true">Vegetarian</h3>
             <hr />

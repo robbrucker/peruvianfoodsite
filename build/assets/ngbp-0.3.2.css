@@ -5893,10 +5893,10 @@ body {
   margin: 0;
   font-size: 4.5em;
   font-weight: 700;
-  font-family: 'Share Tech Mono', sans-serif;
+  font-family: 'Loved by the King', cursive;
 }
 .head_text {
-  font-family: 'Share Tech Mono', sans-serif;
+  font-family: 'Loved by the King', cursive;
   font-size: 30px;
   background-color: rgba(192, 194, 190, 0.24);
 }
@@ -5908,7 +5908,7 @@ h1 {
 }
 .btn,
 p {
-  font-family: 'Share Tech Mono', sans-serif;
+  font-family: 'Loved by the King', cursive;
 }
 ol {
   list-style-type: none;
@@ -5925,7 +5925,7 @@ a {
 }
 .space-right {
   text-align: left;
-  font-family: 'Share Tech Mono', sans-serif;
+  font-family: 'Loved by the King', cursive;
 }
 .redonc {
   font-size: 70px;
@@ -5933,7 +5933,7 @@ a {
 }
 .redonc-two {
   font-size: 70px;
-  font-family: 'Share Tech Mono', sans-serif;
+  font-family: 'Loved by the King', cursive;
 }
 /* Side Menu */
 #sidebar-wrapper {
@@ -6103,7 +6103,7 @@ a {
   }
 }
 .about-me-blurb {
-  font-family: 'Share Tech Mono', sans-serif;
+  font-family: 'Loved by the King', cursive;
   font-size: 18px;
 }
 /* Services */
@@ -6206,7 +6206,7 @@ h3 {
   font-size: 36px;
 }
 ol.timeline {
-  font-family: 'Share Tech Mono', sans-serif;
+  font-family: 'Loved by the King', cursive;
   text-align: left;
   font-size: 23px;
   line-height: 2;
@@ -6225,15 +6225,16 @@ ol.timeline {
   line-height: 2;
 }
 .contact-blurb {
-  font-family: 'Share Tech Mono', sans-serif;
+  font-family: 'Loved by the King', cursive;
   font-size: 36px;
 }
 hr {
   border-top: 15px solid rgba(0, 0, 0, 0.61) !important;
 }
 .menu-description {
-  font-family: 'Share Tech Mono', sans-serif;
+  font-family: 'Loved by the King', cursive;
   background-color: #fff;
+  font-size: 52px;
 }
 .order-section {
   text-align: left;
@@ -6251,11 +6252,11 @@ span.col-md-6 {
 }
 .filter-menu {
   background-color: rgba(255, 255, 255, 0.88);
-  font-family: 'Share Tech Mono', sans-serif;
+  font-family: 'Loved by the King', cursive;
   font-size: 24px;
 }
 .search-text-box {
-  font-family: 'Share Tech Mono', sans-serif;
+  font-family: 'Loved by the King', cursive;
   height: 38px;
   width: 100%;
 }
