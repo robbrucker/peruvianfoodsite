@@ -1,4 +1,4 @@
-var app = angular.module("menu.service", []);
+/*var app = angular.module("menu.service", []);
 app.factory('menuService', function() {
     var menu = {
         getAppetizers: function () {
@@ -246,4 +246,4 @@ app.factory('menuService', function() {
         }
     };
     return menu;
-});
+}); */
