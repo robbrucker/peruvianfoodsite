@@ -7,8 +7,8 @@
     <title>Peruvian Food in Richmond Virginia</title>
 
     <!-- Bootstrap core CSS -->
-    <link href='http://fonts.googleapis.com/css?family=Share+Tech+Mono' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Loved+by+the+King' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <!-- font awesome from BootstrapCDN -->
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
@@ -20,6 +20,7 @@
     <script type="text/javascript" src="vendor/placeholders/angular-placeholders-0.0.1-SNAPSHOT.min.js"></script>
     <script type="text/javascript" src="vendor/angular-ui-router/release/angular-ui-router.js"></script>
     <script type="text/javascript" src="vendor/lodash/lodash.min.js"></script>
+    <script type="text/javascript" src="bower_components/ngtweet/dist/ngtweet.min.js"></script>
     <script type="text/javascript" src="src/app/app.js"></script>
     <script type="text/javascript" src="src/app/globals.js"></script>
     <script type="text/javascript" src="src/app/home/home.js"></script>
@@ -48,33 +49,63 @@
   </ul>
   </div>
 
+  <div class="row" ng-if="params.checkout">
+    <div class="col-md-12 text-center">
+      <p><h1>Thank you, you will receive a confirmation shortly</h1></p>
+    </div>
+  </div>
+  <div class="row" ng-if="params.cancel">
+    <div class="col-md-12 text-center">
+      <p><h1>Sorry to see that you cancelled. If there is anything we can do to help you reconsider, please let us know.</h1></p>
+    </div>
+  </div>
 
   <div id="top" class="header">
     <div class="vert-text">
-      <h1><span class="h-huge quipo-welcome">QUIPU</span></h1>
-      <h1>804.608.9257</h1>
-      <h1> <span class="intro"> PERUVIAN AND INTERNATIONAL CUISINE CATERING SERVICE IN RVA</span></h1>
+      <div class="logo"><img src="assets/img/logo.png" /><br />
+      <h3> >> PERUVIAN FOOD IN RVA << </h3>
+        <h1>804.608.9257</h1>
+        <h1> <span class="intro"> PERUVIAN AND INTERNATIONAL CUISINE CATERING AND MEAL PREP SERVICE IN RVA</span></h1>
+      </div>
+
       <p class="talking-points">Aji de Gallina, Lomo Saltado, Anticuchos, Chifa, Arroz con Pollo, Papa Rellena, Papa a la Huancaina, Rocoto Relleno and much more.  </p>
       <a href="" ng-click="scrollTo('about')" class="btn welcome-button btn-primary">Get started</a>
       <!--<h3>Or..</h3>-->
     </div>
   </div>
   <!-- /Full Page Image Header Area -->
-
+  <!-- checkout=true cancel=true
   <!-- Intro -->
   <div id="about" class="section-two">
     <div class="container">
+
       <div class="row">
         <div class="col-md-12 text-center">
-          <h1><span class="h-huge quipo-welcome">Quipu Services</span></span>
+
+          <h1><span class="h-huge quipo-welcome">Quipu Services</span></span></h1>
           <p class="talking-points">
             Quipu specializes in two main services which are catering and weekly lunch specials.
-            <br /><br />We offer catering for a variety of events, specializing in corporate meetings, with a minimum order of 7 meals.
-            <br /><br />We also have weekly lunch specials that are held once a week. We display an appetizer and entree, as well as the day of the week the meal is being served. Pricing is heavily discounted on these meals. You can order directly from our website and the meals will be delivered during lunch time.
+            <br /><br />We offer drop off and full service catering services for a variety of events, specializing in corporate meetings, with a minimum order of 7 meals. To order, please email us at <a href="mailto:peruvianfoodinrva@gmail.com">peruvianfoodinrva@gmail.com</a> or call us at 804.608.9257
+            <br /><br />Quipu also offers meal preparation. Delicious meals are crafted and cooked to perfection. The meals and the date when they will be available will be posted below. To order, checkout via PayPal.
             </p>
             <p class="order-section">
+              <center>
+             <h1>THIS WEEKS SPECIAL</h1>
+              <twitter-widget twitter-widget-id="'791233733558996992'">
+              </twitter-widget>
+
+              <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="amount" value="8.99">
+                <input type="hidden" name="hosted_button_id" value="YY63YABED2QCE">
+                <input type="image" src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/checkout-logo-large.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+              </form>
 
 
+
+            </center>
+            </p>
              <!-- <br /><br />This weeks special is Causa Limeña with Tuna for <u>Wednesday August 24th 2016</u>. The price is $7.99 per order. To order, please fill out the information below:<br /><br />
             <form method="post" target="dummyframe" action="http://rva-dev.com/contact_rob.php">
 
@@ -89,7 +120,7 @@
               <input type="submit" class="btn btn-primary order-button" ng-click="thankUser()" value="Order" />
               </form>
             </p> -->
-            </h1>
+
         </div>
       </div>
     </div>

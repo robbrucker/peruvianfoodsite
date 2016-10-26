@@ -4,7 +4,8 @@ angular.module( 'ngBoilerplate', [
   'ngBoilerplate.home',
   'menu.service',
   'submit.order.service',
-  'ui.router'
+  'ui.router',
+    'ngtweet'
 ])
 
 .config( function myAppConfig ( $locationProvider ) {
@@ -17,15 +18,13 @@ angular.module( 'ngBoilerplate', [
 .controller( 'AppCtrl', function AppCtrl ( $scope, $location, menuService, $state, $anchorScroll, submitOrder ) {
   $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams){
   });
+  $scope.params = $location.search();
 
-  
-  
   $scope.order = {};
   $scope.appetizers = menuService.getAppetizers();
   $scope.entrees = menuService.getEntrees();
   $scope.sides = menuService.getSides();
   $scope.submitOrder = function() {
-    console.log("Order is ", $scope.order);
     submitOrder.init($scope.order);
     alert("Thank you! Your order has been submitted");
   };

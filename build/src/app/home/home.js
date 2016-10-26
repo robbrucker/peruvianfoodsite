@@ -10,7 +10,7 @@ angular.module( 'ngBoilerplate.home', [
  * this way makes each module more "self-contained".
  */
 .config(function config( $stateProvider ) {
-  $stateProvider.state( 'home', {
+  $stateProvider.state( 'home?cancel&checkout', {
     url: '/',
     views: {
       "main": {
@@ -25,9 +25,10 @@ angular.module( 'ngBoilerplate.home', [
 /**
  * And of course we define a controller for our route.
  */
-.controller( 'HomeCtrl', function HomeController( menuService ) {
-  console.log("Page loaded");
+.controller( 'HomeCtrl', function HomeController( menuService, $stateParams ) {
+
   var vm = this;
+
  // $scope.menu = menuService.getMenu();
 })
 

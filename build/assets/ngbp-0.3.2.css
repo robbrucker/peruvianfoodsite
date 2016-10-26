@@ -5881,7 +5881,7 @@ body {
 }
 .h-huge {
   font-size: 76px;
-  font-family: 'Loved by the King', cursive;
+  font-family: 'Oswald', sans-serif;
 }
 .vert-text {
   display: table-cell;
@@ -5893,10 +5893,10 @@ body {
   margin: 0;
   font-size: 4.5em;
   font-weight: 700;
-  font-family: 'Loved by the King', cursive;
+  font-family: 'Oswald', sans-serif;
 }
 .head_text {
-  font-family: 'Loved by the King', cursive;
+  font-family: 'Oswald', sans-serif;
   font-size: 30px;
   background-color: rgba(192, 194, 190, 0.24);
 }
@@ -5904,11 +5904,11 @@ h3,
 h2,
 h4,
 h1 {
-  font-family: 'Loved by the King', cursive;
+  font-family: 'Oswald', sans-serif;
 }
 .btn,
 p {
-  font-family: 'Loved by the King', cursive;
+  font-family: 'Oswald', sans-serif;
 }
 ol {
   list-style-type: none;
@@ -5921,19 +5921,19 @@ ul {
   font-size: 40px;
 }
 a {
-  font-family: 'Loved by the King', cursive;
+  font-family: 'Oswald', sans-serif;
 }
 .space-right {
   text-align: left;
-  font-family: 'Loved by the King', cursive;
+  font-family: 'Oswald', sans-serif;
 }
 .redonc {
   font-size: 70px;
-  font-family: 'Loved by the King', cursive;
+  font-family: 'Oswald', sans-serif;
 }
 .redonc-two {
   font-size: 70px;
-  font-family: 'Loved by the King', cursive;
+  font-family: 'Oswald', sans-serif;
 }
 /* Side Menu */
 #sidebar-wrapper {
@@ -6000,6 +6000,7 @@ a {
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 36px;
+  font-family: 'Raleway', sans-serif;
 }
 #sidebar-wrapper.active {
   right: 250px;
@@ -6103,7 +6104,7 @@ a {
   }
 }
 .about-me-blurb {
-  font-family: 'Loved by the King', cursive;
+  font-family: 'Oswald', sans-serif;
   font-size: 18px;
 }
 /* Services */
@@ -6195,7 +6196,6 @@ i.scroll:hover {
 }
 .vert-text h1,
 h3 {
-  background-color: rgba(255, 255, 255, 0.88);
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -6206,13 +6206,13 @@ h3 {
   font-size: 36px;
 }
 ol.timeline {
-  font-family: 'Loved by the King', cursive;
+  font-family: 'Oswald', sans-serif;
   text-align: left;
   font-size: 23px;
   line-height: 2;
 }
 .year {
-  font-family: 'Loved by the King', cursive;
+  font-family: 'Oswald', sans-serif;
 }
 .code-facade {
   padding: 2px 4px;
@@ -6225,14 +6225,14 @@ ol.timeline {
   line-height: 2;
 }
 .contact-blurb {
-  font-family: 'Loved by the King', cursive;
+  font-family: 'Oswald', sans-serif;
   font-size: 36px;
 }
 hr {
   border-top: 15px solid rgba(0, 0, 0, 0.61) !important;
 }
 .menu-description {
-  font-family: 'Loved by the King', cursive;
+  font-family: 'Raleway', sans-serif;
   background-color: #fff;
   font-size: 52px;
 }
@@ -6252,11 +6252,33 @@ span.col-md-6 {
 }
 .filter-menu {
   background-color: rgba(255, 255, 255, 0.88);
-  font-family: 'Loved by the King', cursive;
+  font-family: 'Oswald', sans-serif;
   font-size: 24px;
 }
 .search-text-box {
-  font-family: 'Loved by the King', cursive;
+  font-family: 'Oswald', sans-serif;
   height: 38px;
   width: 100%;
+}
+.logo {
+  width: 100%;
+  height: auto;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.81);
+}
+.logo h3 {
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-size: 40px;
+}
+@media (max-width: 400px) {
+  img {
+    max-width: 400px;
+  }
+  .section-three {
+    max-width: 400px;
+  }
+}
+center {
+  background-color: rgba(255, 255, 255, 0.77);
 }
